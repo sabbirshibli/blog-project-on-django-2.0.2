@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Djnago</title>
+  </head>
+  <body>
+    <h1>{{ title }} is working!</h1>
+    {% for obj in object_list %}
+    /posts/id/
+    {% url "posts:detail" id=obj.id %}
+    {{ obj.id }}<br>
+    <a href='{{ obj.get_absolute_url }}'>{{ obj.title }}</a><br>
+    {{ obj.content }}<br>
+    {{ obj.timestamp }}<br>
+    {{ obj.updated }}<br>
+
+    {% endfor %}
+  </body>
+</html>

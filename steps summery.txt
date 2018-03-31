@@ -1,0 +1,4 @@
+01. Creating superuser: python manage.py createsuperuser
+02. Run server: python manage.py runserver
+03. MVC: Model View Controller
+04. CRUD: Create, Retrive, Update, Delete
